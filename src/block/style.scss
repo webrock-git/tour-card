@@ -1,0 +1,203 @@
+@import "../styles/mixin.scss";
+
+.wp-block-toehold-tour-card {
+    &>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .toehold-card-wrapper {
+        height: auto;
+        text-align: center;
+        border: 1px solid #E8EBF1;
+        background: #fff;
+    }
+
+    .toehold-card-image-wrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        &:before {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            content: '';
+            height: 50px;
+            position: absolute;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 79.17%);
+        }
+
+        .toehold-card-image {
+            height: auto;
+            display: block;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .toehold-card-image-ribbon {
+        position: absolute;
+        top: 30px;
+        right: -48px;
+        background-color: #ff6f61;
+        color: #fff;
+        transform: rotate(45deg);
+        z-index: 1;
+        width: 181px;
+        height: 24PX;
+        text-align: center;
+        font-family: "Figtree", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        span {
+            vertical-align: middle;
+        }
+    }
+
+    .toehold-card-content {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .toehold-card-tour-name {
+        z-index: 2;
+        color: #fff;
+        width: 100%;
+        bottom: 10px;
+        line-height: 1;
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        font-family: "Figtree", sans-serif;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.40);
+    }
+
+    &.tour-card {
+        &-new-ribbon {
+            .toehold-card-image-ribbon {
+                background-color: #3773FE;
+            }
+        }
+
+        &-full-ribbon {
+            opacity: 0.6;
+            .toehold-card-image-ribbon {
+                background-color: #9AA0AE;
+            }
+        }
+
+        &-open-ribbon {
+            .toehold-card-image-ribbon {
+                background-color: #90C271;
+            }
+        }
+
+        &-filling-fast-ribbon {
+            .toehold-card-image-ribbon {
+                background-color: #E36767;
+            }
+        }
+    }
+
+    .toehold-card-tour-location-name {
+        line-height: 1;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 2px;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .toehold-card-tour-location-region {
+        color: #9AA0AE;
+        line-height: 1;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .toehold-card-tour-type {
+        color: #9AA0AE;
+        line-height: 1;
+        margin: 16px 0;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .toehold-card-tour-date {
+        color: #000000;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .toehold-card-tour-duration {
+        color: #9AA0AE;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .toehold-card-tour-price {
+        gap: 4px;
+        display: flex;
+        padding: 16px 0 10px;
+        align-items: flex-end;
+        justify-content: center;
+        .toehold-card-tour-price-label {
+            color: #9AA0AE;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "Figtree", sans-serif;
+        }
+
+        .toehold-card-tour-price-offer {
+            color: #4DA1FF;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .toehold-card-tour-price-original {
+            color: #BFC3CE;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Figtree", sans-serif;
+
+            &.has-offer-price {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .toehold-card-tour-btn {
+        gap: 8px;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 12px 16px;
+        align-items: center;
+        background: #FFFFFF;
+        transition: .3s ease;
+        justify-content: center;
+        border: 2px solid #000000;
+        &:hover {
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+    }
+}

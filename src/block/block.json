@@ -1,0 +1,92 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "toehold/tour-card",
+    "version": "1.0.0",
+    "title": "Tour Card",
+    "category": "theme",
+    "description": "Toehold tour card for toehold theme",
+    "example": {
+        "attributes": {
+            "preview": true
+        }
+    },
+    "attributes": {
+        "blockClass": {
+            "type": "string"
+        },
+        "blockCSS": {
+            "type": "string"
+        },
+        "cardThumbnail": {
+            "type": "object",
+            "default": {
+                "url": "https://placehold.co/600x400?text=Toehold Card Thumbnail"
+            }
+        },
+        "cardThumbnailAlt": {
+            "type": "string"
+        },
+        "cardThumbnailRibbon": {
+            "type": "object",
+            "default": {
+                "name": "New",
+                "label": "New",
+                "key": "tour-card-new-ribbon"
+            }
+        },
+        "cardTourName": {
+            "type": "string",
+            "default": "Panther Paradise"
+        },
+        "cardTourLocation": {
+            "type": "string",
+            "default": "Kabini"
+        },
+        "cardTourRegion": {
+            "type": "string",
+            "default": "Karnataka, India"
+        },
+        "cardTourType": {
+            "type": "string",
+            "default": "Wildlife Photography Tour"
+        },
+        "cardTourDates": {
+            "type": "string",
+            "default": "Oct 30 - Nov 1, 2023"
+        },
+        "cardTourDuration": {
+            "type": "string",
+            "default": "4n/5d"
+        },
+        "cardTourPageLink": {
+            "type": "object"
+        },
+        "cardTourOriginalPrice": {
+            "type": "string",
+            "default": "₹ 1,50,000"
+        },
+        "cardTourOfferPrice": {
+            "type": "string",
+            "default": "₹ 1,00,000"
+        },
+        "cardTourLinkText": {
+            "type": "string",
+            "default": "Explore & Book"
+        },
+        "cardTourLinkURL": {
+            "type": "object",
+            "default": {
+                "url": "#"
+            }
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": ["full", "wide"]
+    },
+    "textdomain": "tour-card",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}
