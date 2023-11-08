@@ -4,7 +4,7 @@
     "name": "toehold/tour-card",
     "version": "1.0.0",
     "title": "Tour Card",
-    "category": "theme",
+    "category": "text",
     "description": "Toehold tour card for toehold theme",
     "example": {
         "attributes": {

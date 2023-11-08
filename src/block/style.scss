@@ -1,10 +1,11 @@
 @import "../styles/mixin.scss";
 
 .wp-block-toehold-tour-card {
-    &>* {
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        text-decoration: none;
     }
 
     .toehold-card-wrapper {
@@ -195,6 +196,7 @@
         transition: .3s ease;
         justify-content: center;
         border: 2px solid #000000;
+        color: #000000;
         &:hover {
             color: #FFFFFF;
             background-color: #000000;
