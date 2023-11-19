@@ -136,6 +136,7 @@
         line-height: 1;
         font-size: 14px;
         font-weight: 600;
+        text-transform: uppercase;
         font-family: "Figtree", sans-serif;
     }
 
@@ -144,6 +145,7 @@
         line-height: 1;
         font-size: 14px;
         font-weight: 600;
+        text-transform: uppercase;
         font-family: "Figtree", sans-serif;
     }
 
@@ -174,6 +176,10 @@
             font-size: 14px;
             font-weight: 500;
             font-family: "Figtree", sans-serif;
+            &:not(.has-offer-price) {
+                color: #4DA1FF;
+                font-weight: 700;
+            }
 
             &.has-offer-price {
                 text-decoration: line-through;
